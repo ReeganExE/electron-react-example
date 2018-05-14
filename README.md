@@ -1,19 +1,16 @@
-# webpack 4.x + ES6+
+# electron-react-example
 
-## 运行环境
-Node.js >=  v8.9.0
-Yarn >= 1.2.0
+## To Use
 
-## 启动
-```sh
-#开发
-yarn start [package]
-#示例
-yarn start demo
+To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-#构建
-yarn build [package]
-#示例
-yarn build demo
-
+```bash
+# Clone this repository
+git clone https://github.com/YJJA/electron-react-example
+# Go into the repository
+cd electron-react-example
+# Install dependencies
+npm install
+# Run the app
+npm start
 ```
