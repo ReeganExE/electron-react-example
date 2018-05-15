@@ -2,12 +2,15 @@
   "name": "electron-react-example",
   "version": "1.0.0",
   "private": true,
+  "main": "./build/main.js",
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "start": "node scripts/start",
-    "build": "node scripts/build"
+    "build": "node scripts/build",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win"
   },
   "dependencies": {
-    "electron": "^2.0.0",
     "fs-extra": "5.0.0",
     "history": "4.7.2",
     "http-errors": "1.6.2",
@@ -29,6 +32,7 @@
     "superagent": "3.8.2"
   },
   "devDependencies": {
+    "electron": "^2.0.0",
     "@babel/cli": "7.0.0-beta.40",
     "@babel/core": "7.0.0-beta.40",
     "@babel/node": "7.0.0-beta.40",
@@ -49,6 +53,7 @@
     "copy-webpack-plugin": "4.5.1",
     "cross-spawn": "^6.0.5",
     "css-loader": "0.28.11",
+    "electron-builder": "^20.13.3",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "eslint": "4.18.1",
@@ -85,5 +90,12 @@
     "webpack-dev-middleware": "3.0.1",
     "webpack-hot-middleware": "2.21.2",
     "yargs": "11.0.0"
+  },
+  "build": {
+    "appId": "com.yjja.app",
+    "productName": "ElectronReactExample",
+    "files": [
+      "build"
+    ]
   }
 }
